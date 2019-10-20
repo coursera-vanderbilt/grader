@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "edu.vanderbilt.grader.plugin"
-version = "2.0.2"
+version = "2.0.3"
 
 gradlePlugin {
     plugins {
@@ -12,7 +12,7 @@ gradlePlugin {
             id = group
             displayName = "Vanderbilt University Grader Plugin"
             description = "Vanderbilt University Plugin used to run assignment tests contained in external JAR files"
-            implementationClass = 'edu.vanderbilt.grader.plugin.GreetingPlugin'
+            implementationClass = 'edu.vanderbilt.grader.plugin.GraderPlugin'
         }
     }
 }
