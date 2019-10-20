@@ -1,0 +1,24 @@
+plugins {
+    id 'java-gradle-plugin'
+    id("com.gradle.plugin-publish") version "0.10.0"
+}
+
+group = "edu.vanderbilt.grader.plugin"
+version = "2.0.1"
+
+gradlePlugin {
+    plugins {
+        graderPlugin {
+            id = group
+            displayName = "Vanderbilt University Grader Plugin"
+            description = "Vanderbilt University Plugin used to run assignment tests contained in external JAR files"
+            implementationClass = 'edu.vanderbilt.grader.plugin.GreetingPlugin'
+        }
+    }
+}
+
+pluginBundle {
+    tags = ["gradle", "grader", "vanderbilt", "plugin"]
+    website = "https://github.com/MonteCreasor/grader"
+    vcsUrl = "https://github.com/MonteCreasor/grader.git"
+}
